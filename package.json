@@ -1,0 +1,17 @@
+{
+  "name": "solar-email-service",
+  "version": "0.0.0",
+  "description": "A service that sends an email at 8 PM daily, highlighting hours of the day when solar DC power was less than 80% of reference DC power data.",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "amqp" : "*",
+    "cron":"^1.2.1",
+    "request": "^2.72.0",
+    "nodemailer":"^4.0.1",
+    "smtp-server": "^3.0.1"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  }
+}
