@@ -22,7 +22,9 @@ exports.init = () => {
                         }
                         else {
                             // call EmailService to send an alert.
+                            if(res.length > 0){
                             emailService.send(d.email, res);
+                            }
                             console.log('cron job completed');
                         }
                     });
